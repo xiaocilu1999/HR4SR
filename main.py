@@ -34,7 +34,5 @@ def main():
 if __name__ == '__main__':
     args.mode = 'train'  # 选择模式
     start = time.time()
-    for args.mask_ratio in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]:
-        args.push_title = 'args.mask_ratio = ' + str(args.mask_ratio)
-        main()
+    main()
     end = time.time()
