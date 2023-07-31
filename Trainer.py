@@ -30,7 +30,6 @@ class Trainer(object):
         self.weight_decay = args.weight_decay
         self.metric_ks = args.metric_ks
         self.gamma = args.gamma
-        self.push_title = args.push_title
         self.experiment_path = experiment_path
         self.batch_size = args.batch_size
         self.optimizer = optim.AdamW(self.model.parameters(), self.lr, weight_decay=self.weight_decay)
