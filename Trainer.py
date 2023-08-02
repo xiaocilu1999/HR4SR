@@ -97,7 +97,7 @@ class Trainer(object):
         self.save_noisy = []
         average_meter_set = AverageMeterSet()
         with torch.no_grad():
-            tqdm_dataloader = tqdm(self.data_loader["vaild_loader"])
+            tqdm_dataloader = tqdm(self.data_loader["valid_loader"])
             for batch_idx, batch in enumerate(tqdm_dataloader):
                 batch = [x.to(self.device) for x in batch]
                 sequence, candidates, labels = batch[0], batch[1], batch[2]
